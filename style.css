@@ -1,0 +1,82 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    height: 100vh;
+    color: #3a2b4d;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(178, 102, 0, 0.4);
+
+    background: linear-gradient(to bottom, #f8f0ff, #881dec);
+    background-color: #e4ddf1;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(243, 159, 26, 0.05) 0,
+            rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px,
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(255, 255, 255, 0.5) 0,
+            rgba(255, 255, 255, 0.5) 1px,
+            transparent 1px,
+            transparent 20px
+        );
+    overflow-y: auto;
+    position: relative;
+}
+
+nav {
+    background-color: rgba(200, 160, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(33, 7, 82);
+    margin: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #5a3d99;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(178, 102, 0, 0.4);
+}
+
+ul, ol {
+    display: table;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+footer {
+    background: #333;
+    color: #e6ccff;
+    text-align: left;
+}
+
+@keyframes float {
+    0% { transform: translateY(-50px) rotate(0deg); }
+    50% { transform: translateY(0px) rotate(180deg); }
+    100% { transform: translateY(-50px) rotate(360deg); }
+}
